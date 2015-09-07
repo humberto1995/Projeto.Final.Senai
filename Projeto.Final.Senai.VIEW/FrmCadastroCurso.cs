@@ -245,12 +245,18 @@ namespace Projeto.Final.Senai.VIEW
 
         private void txtObservacoes_Click(object sender, EventArgs e)
         {
-            txtObservacoes.Text = string.Empty;
+            if (txtObservacoes.Text == "Escreva Algumas Observações(Campo não é Obrigatório,Clique para Limpar o Campo)")
+            {
+                txtObservacoes.Text = string.Empty;
+            }
         }
 
         private void txtCurso_Click(object sender, EventArgs e)
         {
-            txtCurso.Text = string.Empty;
+            if (txtCurso.Text == "Escreva o nome do Curso(Campo Obrigatório)")
+            {
+                txtCurso.Text = string.Empty;
+            }
         }
     }
 }
